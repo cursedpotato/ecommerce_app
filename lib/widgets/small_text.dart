@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 
 // ignore: must_be_immutable
 class SmallText extends StatelessWidget {
-  Color? color = const Color(0xFF332d2b);
+  Color? color = const Color(0xFFccc7c5);
   final String text;
   double size;
   SmallText({

@@ -2,13 +2,13 @@ import 'package:flutter/cupertino.dart';
 
 // ignore: must_be_immutable
 class BigText extends StatelessWidget {
-  Color? color = const Color(0xFF332d2b);
+  Color? color;
   final String text;
   double size;
   TextOverflow textOverflow;
   BigText({
     Key? key,
-    this.color,
+    this.color = const Color(0xFF332d2b),
     this.size =20,
     required this.text,
     this.textOverflow = TextOverflow.ellipsis,
