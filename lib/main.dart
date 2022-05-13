@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Roboto',
         primarySwatch: Colors.blue,
       ),
-      home: MainFoodPage(),
+      home: const MainFoodPage(),
     );
   }
 }

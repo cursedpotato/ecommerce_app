@@ -19,9 +19,9 @@ class _MainFoodPageState extends State<MainFoodPage> {
         children: [
           Container(
             child: Container(
-              margin: EdgeInsets.only(top: 45, bottom: 15),
+              margin: const EdgeInsets.only(top: 45, bottom: 15),
               //might make edgeinsets symetrics
-              padding: EdgeInsets.only(left: 20, right: 20),
+              padding: const EdgeInsets.only(left: 20, right: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -34,7 +34,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                       Row(
                         children: [
                           SmallText(text: "CDMX", color: Colors.black54),
-                          Icon(Icons.arrow_drop_down_rounded)
+                          const Icon(Icons.arrow_drop_down_rounded)
 
                         ],
                       )
@@ -43,7 +43,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                    Container(
                     width: 45,
                     height: 45,
-                    child: Icon(
+                    child: const Icon(
                       Icons.search,
                       color: Colors.white,
                     ),
@@ -55,7 +55,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
               ),
             ),
           ),
-          FoodPageBody()
+          const FoodPageBody()
         ],
       ),
     );
