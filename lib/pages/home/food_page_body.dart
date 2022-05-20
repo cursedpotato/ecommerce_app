@@ -1,7 +1,7 @@
 import 'package:dots_indicator/dots_indicator.dart';
-import 'package:ecommerce_app/pages/food/popular_food_detail.dart';
 import 'package:ecommerce_app/utils/colors.dart';
 import 'package:ecommerce_app/utils/dimensions.dart';
+import 'package:ecommerce_app/widgets/app_column.dart';
 import 'package:ecommerce_app/widgets/big_text.dart';
 import 'package:ecommerce_app/widgets/icon_and_text_widget.dart';
 import 'package:ecommerce_app/widgets/small_text.dart';
@@ -260,9 +260,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                   left: Dimensions.width15,
                   top: Dimensions.height15,
                 ),
-                // TODO: I may use widget app column
 
-                child: AppColumn(),
+
+                child: const AppColumn(title: "Taco de pastor"),
               ),
             ),
           ),
