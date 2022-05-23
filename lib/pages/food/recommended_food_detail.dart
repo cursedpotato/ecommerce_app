@@ -93,8 +93,40 @@ class RecommendedFoodWidget extends StatelessWidget {
               ],
             ),
           ),
-          Row(
-            children: [],
+          Container(
+            height: Dimensions.bottomHeightBar,
+            padding: EdgeInsets.symmetric(
+              horizontal: Dimensions.width20,
+              vertical: Dimensions.height30,
+            ),
+            decoration: BoxDecoration(
+                color: AppColors.buttonBackgroundColor,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(Dimensions.radius20 * 2),
+                  topRight: Radius.circular(Dimensions.radius20 * 2),
+                )),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  padding: EdgeInsets.all(Dimensions.height20),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(Dimensions.font20),
+                    color: Colors.white,
+                  ),
+                  child: Icon(Icons.favorite, color: AppColors.mainColor,)
+                ),
+                Container(
+                  padding: EdgeInsets.all(Dimensions.height20),
+                  child:
+                      BigText(text: "\$10 | add to card", color: Colors.white),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(Dimensions.radius20),
+                    color: AppColors.mainColor,
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),
