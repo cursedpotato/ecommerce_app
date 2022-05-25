@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/controllers/popular_product_controller.dart';
 import 'package:ecommerce_app/pages/food/recommended_food_detail.dart';
 
 import 'package:flutter/material.dart';
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    Get.find<PopularProductController>().getPopularProductList();
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Ecommerce app',
