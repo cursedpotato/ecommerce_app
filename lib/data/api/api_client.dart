@@ -10,7 +10,8 @@ class ApiClient extends GetConnect implements GetxService {
     timeout = Duration(seconds: 30);
     _mainHeaders = {
       'Content-type': 'application/json; charset=UTF-8',
-      'Authorization': 'Bearer $token'
+      'Authorization': 'Basic dXNlcllvdXR1YmU6cGFzd29yZFlvdXR1YmU='
+      // 'Authorization': 'Bearer $token'
     };
   }
 

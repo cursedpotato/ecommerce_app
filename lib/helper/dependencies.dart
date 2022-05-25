@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 
 Future<void> init() async {
   // api
-  Get.lazyPut(() => ApiClient(appBaseUrl: "https://dbestech.com"));
+  Get.lazyPut(() => ApiClient(appBaseUrl: "https://15cdf4b7-6313-4f95-82f8-8692c9d0056c.mock.pstmn.io"));
   // repo
   Get.lazyPut(() => PopularProductRepo(apiClient: Get.find()));
   // controller
